@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import CodeScanner from './components/tempScanner'; // Adjust the path based on your file structure
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+    <div>
+        <h1>SAST-SCANNER</h1>
+        <CodeScanner />
     </div>
-  );
-}
+);
 
-export default App;
+export default App; // Make sure to export the component
+
+
